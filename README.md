@@ -4,7 +4,7 @@ MNIST data를 학습한 간단한 VAE model
 
 
 ## Code description
-*code상에서, encoder의 output이 mean & log_var인가?*   
+*code상에서, encoder의 output이 왜 mean & log_var인가?*   
 encoder의 마지막 layer의 activation function이 없기 때문에, value range는 [-무한대, +무한대]   
 반면, 표준편차(sigma)는 0보다 커야 하므로 (표준편차 = 분산의 제곱근)   
 log(표준편차의 제곱)이 output이라고 가정하고 진행한다.   
